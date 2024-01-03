@@ -41,4 +41,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-.github/workflows/*
+.github/workflows/ci.yml
+.github/workflows/ci1.yml
