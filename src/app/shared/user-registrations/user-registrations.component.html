@@ -1,0 +1,26 @@
+<div class="user-data-container">
+    <div class="title">
+        New User Registrations
+    </div>
+    <div class="data">
+        <table class="details-table">
+            <tr *ngFor="let user of usersData; let i = index" class="table-row">
+                <td>
+                    <div class="profile-img">
+                        <img [src]="user.picture" alt="profileImg"/>
+                    </div>
+                </td>
+                <td>
+                    <span>{{user.name}}</span> 
+                    <span>{{user.country}}</span>
+                </td>
+                <td>
+                    <progress class="progress-bar" [value]="user.progress" [ngStyle]="{'width': user.progress+'%'}" max="100"> 
+                        {{user.progress}} 
+                    </progress>{{user.progress}}%
+                </td>
+                <td>More</td>
+            </tr>
+        </table>
+    </div>
+</div>

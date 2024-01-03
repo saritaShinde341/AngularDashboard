@@ -1,0 +1,14 @@
+<div class="donut-chart-container">
+  <div>Top Products</div>
+    <div>
+        <canvas #dChart></canvas>
+    </div>
+    <div class="list">
+      <ul>
+        <li *ngFor="let label of labels;let i = index">
+            <span [ngStyle]="{'background-color':colorCodes[i]}"></span>
+            <span>{{label}}</span>
+        </li>
+      </ul>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 300px;
+  }
+
+  .donut-chart-container{
+    .list{
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            list-style-type: none;
+            
+            li{
+                font-family: 'Roboto-Medium';
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.25rem;
+                span{
+                    &:first-child{
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        border-radius: 50%;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+  }

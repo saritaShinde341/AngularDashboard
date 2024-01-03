@@ -1,0 +1,30 @@
+<div class="recent-order-container">
+    <div class="title">
+        Recent Order
+    </div>
+    <div class="data">
+        <table class="details-table">
+            <tr class="table-row">
+                <td>#</td>
+                <td>Customer</td>
+                <td>Products</td>
+                <td>Delivery Date</td>
+                <td>Status</td>
+                <td>Tracking No</td>
+                <td>Shipping</td>
+                <td></td>
+            </tr>
+            <tr *ngFor="let order of ordersData; let i = index" class="table-row">
+                <td>{{i.toString().padStart(2, "0")}}</td>
+                <td>{{order.name}}</td>
+                <td>{{order.product}}</td>
+                <td>{{order.delivery_date}}</td>
+                <td><span [ngStyle]="{'background-color': getColor(order.status)}">{{order.status}}</span></td>
+                <td>{{order.tracking_no}}</td>
+                <td>{{order.shipping}}</td>
+                <td><i class="fa fa-light fa-chevron-down"></i></td>
+            </tr>
+        </table>
+    </div>
+</div>
+

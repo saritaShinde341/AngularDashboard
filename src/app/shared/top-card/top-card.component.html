@@ -1,0 +1,14 @@
+<div class="cards-container">
+    <div class="card" *ngFor="let card of cardsData">
+        <div class="card-data"> 
+            <div>{{card.value}}%</div>
+            <div>
+                <span>{{card.header}}</span>
+                <span>{{card.sub_header}}</span>
+            </div>
+        </div>
+        <div class="card-icon">
+            <i class="fa fa-solid fa-music"></i>
+        </div>
+    </div>
+</div>
