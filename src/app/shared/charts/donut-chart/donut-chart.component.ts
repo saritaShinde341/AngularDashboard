@@ -18,6 +18,7 @@ export class DonutChartComponent implements OnInit {
   ngAfterViewInit() {
     Chart.register(...registerables);
     const donutChart = this.dChart.nativeElement;
+    console.log("Testing");
     this.data = new Chart(donutChart, {
       type: 'doughnut',
       data: {
