@@ -1,4 +1,4 @@
-import { AppData, Cards, Orders, Users } from '../app/modal/data.model';
+import { Cards, Orders, Users } from '../app/modal/data.model';
 import { Component, OnInit } from '@angular/core';
 
 import { MainService } from './service/main-service.service';
